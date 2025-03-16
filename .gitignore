@@ -1,0 +1,6 @@
+.venv
+.env
+.flaskenv
+__pycache__
+parser/__pycache__
+old_git

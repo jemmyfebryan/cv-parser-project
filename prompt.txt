@@ -1,0 +1,40 @@
+Parse the CV information to fill this JSON format:
+
+[
+{{
+    "name": string,
+    "email": string,
+    "phone": string,
+    "experience": [
+    {{
+        "job_title": string,
+        "company": string,
+        "job_type": string from one of ['Full-time', 'Part-time', 'Internship', 'Freelance', 'Contract', 'Remote', 'Other']
+        "month_from": integer (month in number),
+        "year_from": integer (year in number),
+        "month_to": integer (month in number),
+        "year_to": integer (year in number),
+        "isPresent": boolean,
+        "description": string
+    }}
+    ],
+    "education": [
+    {{
+        "school": string,
+        "degree": string from one of ['Elementary School', 'Junior High School', 'Senior High School', 'Diploma 1', 'Diploma 2', 'Diploma 3', 'Diploma 4', 'Bachelor', 'Master', Doctoral'],
+        "field_of_study": string,
+        "grade": float,
+        "month_from": integer (month in number),
+        "year_from": integer (year in number),
+        "month_to": integer (month in number),
+        "year_to": integer (year in number),
+        "isPresent": boolean,
+        "description": string
+    }}
+    ],
+    "skill": string[] (hard skill and soft skill),
+    "language": string[] (communication language)
+}}
+]
+
+Just only response with full JSON, don't returns any other text
